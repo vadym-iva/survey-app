@@ -1,0 +1,30 @@
+@use 'public/styles/_variables' as *;
+@use 'public/styles/_mixins' as *;
+
+.button {
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 100%;
+  padding: 20px;
+  background: $c-lavender-blue;
+  border: 1px solid $c-light-gray;
+  border-radius: 16px;
+  box-shadow: 2px 2px 6px 0px $c-light-purple;
+  transition: all 0.1s ease-in-out;
+
+  color: $c-charleston-green;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    @include activeButtonStyles();
+  }
+}
+
+.active {
+  @include activeButtonStyles();
+}

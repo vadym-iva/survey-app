@@ -1,0 +1,12 @@
+@use 'public/styles/_variables' as *;
+
+@mixin activeButtonStyles {
+  background: linear-gradient(
+    165.54deg,
+    $c-dark-purple -33.39%,
+    $c-midnight-blue 15.89%,
+    $c-purple 55.84%,
+    $c-indigo 74.96%
+  );
+  color: $c-alice-blue;
+}
